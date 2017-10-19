@@ -1,0 +1,71 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication26
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int q = 1;
+            sbyte w = 127;//От -128 до 127;8-разрядное целое число со знаком	
+            short e = 10000;//От -32 768 до 32 767;16-разрядное целое число со знаком
+            long r = -123456;//64-разрядное целое число со знаком
+            byte t = 254;//обозначает целочисленный тип данных, в котором хранятся значения;От 0 до 255
+            ushort y = 65000;//От 0 до 65 535
+            uint u = 1;//От 0 до 4 294 967 295
+            ulong i = 4325642363;//От 0 до 18 446 744 073 709 551 615
+            char o = '\u0058';
+            bool p = true;
+            float a = 3.5f;//плавающая точка 32
+            double s = 5.5;//плавающая точка 64
+            decimal d = 3.5m;//128-разрядное тип данных,меньше,но точнее,плавающая точка
+            string  f = "a"+"b";//ссылочный тип
+            object g = 1;//переменная любого типа, упаковывает переменную
+            Console.WriteLine("q = {0} ",p);
+            ///////////////////222222222222222222222222222222222222
+            double x = 1234.7;
+            int bx = (int)x;
+            System.Console.WriteLine(bx);
+
+            double v = 1232.4423424237;
+            float bv = (float)v;
+            System.Console.WriteLine(bv);
+
+            ulong n = 123534;
+            int bn = (int)n;
+            System.Console.WriteLine(bn);
+
+            ulong m = 123534;
+            uint bm = (uint)m;
+            System.Console.WriteLine(bm);
+
+            ulong z = 123534;
+            ushort bz = (ushort)z;
+            System.Console.WriteLine(bz);
+
+            ushort zxc = 123;
+            long xcv = zxc;
+            int vbn = zxc;
+            uint bnm = zxc;
+            ulong nmm = zxc;
+            ////////////////333333333333333333333333333
+            int ip = 123;
+            object oo = ip;
+            ip = (int)oo;
+            /////////////////444444444444444444444444444
+            var mas = new[] { 1, 2, 3, 4, 5 };
+            Console.Write(mas.GetType());
+            System.Console.WriteLine();
+            ////////////////5555555555555555555555555555
+            int? x1 = null;
+            int? x2 = null;
+            System.Console.Write(x1 == x2);
+            System.Console.WriteLine();
+
+        }
+    }
+}
